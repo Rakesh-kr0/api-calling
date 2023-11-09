@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api-calling</title>
+</head>
+<style> 
+    .table { 
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        margin: 5rem;
+    } 
+
+
+    </style> 
+<body>
+    <table class="table">
+        <tr>
+            <td>Enter Product Id</td>
+            <td><input type="text" id="inputProductId"></td>
+            <td><input type="button" value="Search" id="searchProductId" onclick="searchProduct_click()"></td>
+            <td rowspan="5">
+                <img src="" alt="" id="imgProductId" width="200px">
+            </td>
+        </tr>
+        <tr>
+            <td>Product Title</td>
+            <td id="tdTitle"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Product Price</td>
+            <td id="tdPrice"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Product Brand</td>
+            <td id="tdBrand"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Product Catogry</td>
+            <td id="tdCatogry"></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script src="./api-calling.js"></script>
+</body>
+</html>
